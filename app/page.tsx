@@ -1,3 +1,5 @@
+
+import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
@@ -5,42 +7,7 @@ export default function Home() {
       {/* BACKGROUND GLOW */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(120,119,198,0.15),transparent_40%)]" />
 
-      {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 w-full z-50 border-b border-zinc-900/80 backdrop-blur-xl bg-black/40">
-
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-
-          <div className="text-2xl font-semibold tracking-tight">
-            FounderOS
-          </div>
-
-          <div className="hidden md:flex items-center gap-10 text-sm text-zinc-400">
-
-            <a href="#" className="hover:text-white transition">
-              Features
-            </a>
-
-            <a href="#" className="hover:text-white transition">
-              Dashboard
-            </a>
-
-            <a href="#" className="hover:text-white transition">
-              Pricing
-            </a>
-
-            <a href="#" className="hover:text-white transition">
-              Contact
-            </a>
-
-          </div>
-
-          <button className="px-5 py-2 rounded-full border border-zinc-700 text-sm hover:bg-zinc-900 transition">
-            Join Beta
-          </button>
-
-        </div>
-
-      </nav>
+      <Navbar />
 
       {/* HERO SECTION */}
       <div className="min-h-screen flex items-center justify-center pt-24">
@@ -279,7 +246,7 @@ export default function Home() {
           <button className="px-8 py-4 rounded-full border border-zinc-700 text-zinc-300 hover:bg-zinc-900 transition duration-300">
             Contact Sales
           </button>
-git status
+
         </div>
 
       </section>
